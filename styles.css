@@ -1,0 +1,119 @@
+body {
+    background: linear-gradient(135deg, #3D7DFF 0%, #2A3D6D 100%);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    flex-direction: column;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    position: relative;
+    z-index: 1;
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .intro-text {
+    font-size: 18px;
+    color: #F0F0F0;
+    line-height: 1.6;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    margin-top: 20px;
+  }
+  
+  .reveal-btn {
+    background-color: #FF6F61;
+    color: #ffffff;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .reveal-btn:hover {
+    transform: scale(1.05);
+    background-color: #FF3E3E;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .show-text {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .typewriter h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .1em;
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+    color: #ffffff;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  .poster {
+    width: 100%;
+    max-width: 400px; /* Ukuran maksimum poster lebih kecil */
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  footer {
+    background-color: #1F2833;
+    color: #ffffff;
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+    border-top: 3px solid #66FCF1;
+    position: relative;
+    z-index: 1;
+  }
+  
+  footer img {
+    max-width: 130px;
+    border-radius: 50%;
+  }
+  
+  footer p {
+    margin: 15px 0 0;
+    font-size: 14px;
+    color: #66FCF1;
+  }
+  
+  @media (max-width: 768px) {
+    .intro-text {
+      font-size: 16px;
+    }
+  
+    .poster {
+      max-width: 100%;
+    }
+  
+    footer p {
+      font-size: 12px;
+    }
+  }
+  
