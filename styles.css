@@ -10,6 +10,16 @@ body {
     color: #ffffff;
     margin: 0;
     padding: 0;
+    animation: backgroundAnimation 10s infinite alternate;
+  }
+  
+  @keyframes backgroundAnimation {
+    0% {
+      background: linear-gradient(135deg, #3D7DFF 0%, #2A3D6D 100%);
+    }
+    100% {
+      background: linear-gradient(135deg, #6A95FF 0%, #4B5D89 100%);
+    }
   }
   
   .container {
@@ -21,6 +31,11 @@ body {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+  }
+  
+  .container:hover {
+    transform: scale(1.02);
   }
   
   .intro-text {
@@ -59,23 +74,9 @@ body {
     transform: translateY(0);
   }
   
-  .typewriter h1 {
-    overflow: hidden;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .1em;
-    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
-    color: #ffffff;
-  }
-  
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
   .poster {
     width: 100%;
-    max-width: 400px; /* Ukuran maksimum poster lebih kecil */
+    max-width: 400px;
     margin-top: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
